@@ -1,11 +1,17 @@
 #include <iostream>
-
-consteval int get_value(){
-    return 3;
-}
+#include <string>
 
 int main(){
-    constexpr int value = get_value();
-    std::cout << "value : " << value << std::endl;
+    char myName;
+    int age;
+    std::cout << "Write your name here" << std::endl;
+    std::cin >> myName;
+
+    std::cout << "Write your age here" << std::endl;
+    std::cin >> age;
+
+    std::cout << "Your age is: " << age << std::endl;
+    std::cout << "Your name is: " << myName << std::endl; 
+
     return 0;
 }
