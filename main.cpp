@@ -1,11 +1,9 @@
 #include <iostream>
-
-consteval int get_value(){
-    return 3;
-}
+#include <string>
 
 int main(){
-    constexpr int value = get_value();
-    std::cout << "value : " << value << std::endl;
-    return 0;
+    int cuccut {10};
+    long long dicho {123};
+    std::cout << cuccut << " và 0 " << dicho << std::endl;
+    std::cout << sizeof(dicho) << " is the size of 'dicho' " << dicho << std::endl;
 }
